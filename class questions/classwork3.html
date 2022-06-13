@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class work</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const marks = [50, 60, 90, 97];
+
+        getResult(marks);
+
+        function getResult(marks) {
+            if (!isPassInAllSubject(marks)) {
+                console.log("Fail..");
+                return false;
+            }
+        }
+        let percentage = getPercentage(getTotalMarks(marks), marks.length * 100); {
+
+            console.log("You got" + getDivision(percentage));
+        }
+
+        function isPassInAllSubject(marks) {
+            let passMarks = marks.filter(mark => mark >= 40);
+            return (passMarks.length === marks.length) ? true : false;
+        }
+
+        function getTotalMarks(marks) {
+            return marks.reduce(function(mark1, mark2) {
+                return mark1 + mark2;
+            }, 0);
+        }
+
+        function getPercentage(totalMarks, total) {
+            return ((totalMarks / total) * 100);
+        }
+
+        function getDivision(percentage) {
+            if (percentage >= 80) {
+                return 'Distinction';
+            } else if (percentage > 60) {
+                return "First Division";
+            } else if (percentage > 50) {
+                return "Second Division";
+            } else if (percentage > 40) {
+                return "Third Divison"
+            } else {
+                return "Fail";
+            }
+        }
+    </script>
+</body>
+
+</html>

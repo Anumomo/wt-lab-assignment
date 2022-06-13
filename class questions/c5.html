@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <button onclick="handClick()">Click Me</button>
+    <button>Hover Me!</button>
+    <input type="text" id="search" /> Name: <span id="display"></span>
+
+    <div id="text-content"></div>
+    <div id="inner-html"></div>
+
+    <script type="text/javascript">
+        function handClick() {
+            alert("Handling");
+
+        }
+        const btnE1 = document.querySelectorAll("button");
+        for (Element of btnE1) {
+            element.addEventListener('click', function() {
+                alert("Second click");
+            });
+        }
+        const searchE1 = document.querySelector("#Serch");
+
+        searchE1.onekeyup = function() {
+
+        }
+    </script>
+
+</body>
+
+</html>

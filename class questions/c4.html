@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>DOM Select</title>
+</head>
+
+<body>
+    <p id="p1">Hello</p>
+    <p class="h1">Hi</p>
+    <span>Span1</span>
+    <span>Span2</span>
+    <h1 class="hi">Hi</h1>
+
+    <script type="text/javascrip">
+        const el = document.getElementById('p1'); el.style.color="red"; console.log(el); const pE1 = document.getElementsByTagName("p"); for(element of pE1) { element.style.color ="blue"; } const hiE1 = document.getElementsByClassName("hi"); for(element of hiE1)
+        { element.style.color = "pink"; } const qP1E1 = document.querySelector("#P1"); qP1E1.style.backgroundColor = "green"; const divSpan = document.querySelectorAll("div span"); for (element of divSpanE1) { element.style.backgroundColor = "red"; }
+    </script>
+</body>
+
+</html>

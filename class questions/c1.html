@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /*    const cars = ['BMW', 'Maruti 800', 'Suzuki', 'Tucson']
+                                for (let i = 0; i < cars.lenght; i++) {
+                                    console.log(cars[i]);
+                                }
+                                for (car of cars) {
+                                    console.log(car);
+                                }*/
+
+
+
+        //return with parameter
+
+        function isEligibleToVote(age) {
+
+
+            return (age < 18) ? false : true;
+        }
+
+
+        //return without parameter
+
+        function isEligibleToVote() {
+            let age = 20;
+            if (age < 18) {
+                return false;
+            }
+            return true;
+        }
+        //
+
+
+        //no return with parameter
+        function difference(num1, num2) {
+            consol.log((num1 < num2) ? num2 - num1 : num1 - num2);
+        }
+
+
+        //no return without parameter
+        function sumNoReturnWithoutParameter() {
+            consol.log(2 + 5);
+        }
+        sumNoReturnWithoutParameter();
+        difference(6, 2);
+
+        if (isEligibleToVoteWithParam(13)) {
+            console.log("Elogilble to vote");
+        } else {
+            console.log("Not Eligible to vote");
+        }
+    </script>
+</body>
+
+</html>
