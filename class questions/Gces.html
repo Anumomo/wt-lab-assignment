@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let gces = {
+            name: "Gandaki College of Engineering and Science",
+            adress: {
+                streetName: "Lamachaur",
+                city: "Pokhara",
+                district: "Kaski",
+                state: "Gandaki",
+                country: "Nepal"
+            },
+            affilateTo: "Pokhara University",
+            staffs: [{
+                name: "Birendra Khadka",
+                position: "Principle",
+                mobile: "9856011111"
+            }, {
+                name: "Ashok Raj Parajuli",
+                position: "Vice Principle",
+                mobile: "9856022222"
+            }, {
+                name: "Rajendra Thapa",
+                position: "Project Head",
+                mobile: "9856033333"
+            }, ],
+            noOfStaffs() {
+                return this.staffs.length
+            }
+        }
+
+        console.log(gces.name);
+        console.log(gces.adress.streetName + "," + gces.adress.city + "," + gces.adress.state + "," + gces.adress.country);
+
+        let principleArray = gces.staff.filter(function(staff) {
+            return staff.position == "Principle";
+        });
+        console.log("Principle's name =" + principleArray[0].name);
+
+        let principle = (gces.staff.find((staff) => staff.position == "Principle").name);
+        2
+    </script>
+
+</body>
+
+</html>
