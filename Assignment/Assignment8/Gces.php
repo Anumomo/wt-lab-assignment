@@ -14,33 +14,33 @@ echo "<h1>Gandaki College of Engineering & Science</h1>";
 $gcesStaffs = [
 	"academic" => [
 		[
-			"name" => "Bishal Shrestha",
-			"address" => "Syangja",
+			"name" => "Aanya Fozer",
+			"address" => "Okahama",
 			"phones" => ["9856011111","987654321"],
-			"subjects" => ["Micro Processor", "Logic Circuit"]
+			"subjects" => ["Web Technology", "C++"]
 		],
 		[
-			"name" => "Nishal Gurung",
-			"address" => "Pokhara",
+			"name" => "Matth Gonzal",
+			"address" => "Bhaktapur",
 			"phones" => ["9856022222","983451267"],
-			"subjects" => ["Web Technology", "JAVA"]
+			"subjects" => ["Photoshop", "JAVA"]
 		],
 		[
-			"name" => "Ashis Shrestha",
-			"address" => "Kathmandu",
+			"name" => "Nivan Gurung",
+			"address" => "Pokhara",
 			"phones" => ["9856033333",],
-			"subjects" => ["Physics", "PST"]
+			"subjects" => ["Social", "Psycology"]
 		]
 	],
 	"non-academic" => [
 		[
-			"name" => "Anushka Thapa",
-			"address" => "Lampata",
+			"name" => "Tarus Pradhan",
+			"address" => "Kathmandu",
 			"phones" => ["9856044444"],
 		],
 		[
-			"name" => "Rejii Magar",
-			"address" => "Jomsom",
+			"name" => "Ansuman Banton",
+			"address" => "London",
 			"phones" => ["9856055555"],
 		],
 	]
@@ -55,9 +55,9 @@ foreach($gcesStaffs as $staffType => $staffDetails){
 	foreach($staffDetails as $key => $staff ){
 		//TR START
 	  echo "<tr bgcolor = 'greenyellow'>";
-      echo "<td bgcolor = 'skyblue' >$staffType</td>";
-      echo "<td bgcolor = 'yellow'>$staff[name]</td>";
-      echo "<td bgcolor = 'pink'>$staff[address]</td>";
+      echo "<td bgcolor = 'white' >$staffType</td>";
+      echo "<td bgcolor = 'pink'>$staff[name]</td>";
+      echo "<td bgcolor = 'lightblue'>$staff[address]</td>";
 	  echo "<td>";
     foreach ($staff["phones"] as $phone){
       echo "$phone ";
